@@ -13,7 +13,7 @@
 !---------------------------------------------------------------
 
 ! ・検索の「他の人はこちらも視聴しています」を消す
-youtube.com#ytd-shelf-renderer:has-text(/他の人はこちらも視聴しています/)
+youtube.com##ytd-shelf-renderer:has-text(/他の人はこちらも視聴しています/)
 youtube.com##ytd-shelf-renderer:has-text(/People also watched/)
 
 ! ・検索の「他の人はこちらも検索しています」を消す
