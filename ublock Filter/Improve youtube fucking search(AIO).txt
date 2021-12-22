@@ -16,10 +16,13 @@
 youtube.com##ytd-shelf-renderer:has-text(/他の人はこちらも視聴しています/)
 youtube.com##ytd-shelf-renderer:has-text(/People also watched/)
 
-! ・検索の「他の人はこちらも検索しています」を消す
-youtube.com##ytd-shelf-renderer:has-text(/他の人はこちらも検索しています/)
+! ・検索の「他の人はこちらも検索」を消す
+youtube.com##ytd-shelf-renderer:has-text(/他の人はこちらも検索/)
 youtube.com##ytd-shelf-renderer:has-text(/People also search for/)
 
 ! ・検索の「あなたへのおすすめ」を消す
 youtube.com##ytd-shelf-renderer:has-text(/あなたへのおすすめ/)
 youtube.com##ytd-shelf-renderer:has-text(/For you/)
+
+! ・検索の「前に再生した動画」を消す
+youtube.com##ytd-shelf-renderer:has-text(/前に再生した動画/)
