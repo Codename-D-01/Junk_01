@@ -1,0 +1,25 @@
+[Adblock Plus 2.0]
+! Title: Youtubeの検索から不要要素を排除する奴
+! Description: 検索に邪魔な「他の人はこちらも視聴しています」や「あなたへのおすすめ」を消す
+! Last modified: 2021/12/22 00:00 JST
+! License: WTFPL（Do What The Fuck You Want To Public License）
+! Homepage: https://github.com/Codename-D-01/Junk_01.git
+
+!---------------------------------------------------------------
+! 正直フィルター作成はよくわからんから海外情報頼りにコピペで組み上げた
+! 機能してる間はYoutubeのあの検索マジでノイズまみれで使い物にならんってのからおさらばできると思う
+! 英語のやつ参考に日本語のに対応させた感じ、半分自分用に作ったものだし別言語増やしたいなら自分で追加してね
+! 〇〇は残しておきたいとかあるなら部分的にコピーしてマイフィルターにでも突っ込んでね、流石にフィルター3つに分けるのは管理がダルい
+!---------------------------------------------------------------
+
+! ・検索の「他の人はこちらも視聴しています」を消す
+youtube.com#ytd-shelf-renderer:has-text(/他の人はこちらも視聴しています/)
+youtube.com##ytd-shelf-renderer:has-text(/People also watched/)
+
+! ・検索の「他の人はこちらも検索しています」を消す
+youtube.com##ytd-shelf-renderer:has-text(/他の人はこちらも検索しています/)
+youtube.com##ytd-shelf-renderer:has-text(/People also search for/)
+
+! ・検索の「あなたへのおすすめ」を消す
+youtube.com##ytd-shelf-renderer:has-text(/あなたへのおすすめ/)
+youtube.com##ytd-shelf-renderer:has-text(/For you/)
